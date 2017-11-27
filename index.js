@@ -2,7 +2,6 @@ var greenify = require('./greenify')
 var noui = require('./jquery.nouislider')
 var foo = require('provide-plugin-foo-test')
 
-greenify($)
 noui($)
 
 $(() => {
