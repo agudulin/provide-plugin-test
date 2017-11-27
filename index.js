@@ -1,11 +1,13 @@
 var greenify = require('./greenify')
 var noui = require('./jquery.nouislider')
-var foo = require('provide-plugin-foo-test')
 
+greenify($)
 noui($)
 
 $(() => {
-  foo()
+  //var foo = require('provide-plugin-foo-test')
+  var b3 = require('./b3_glue')
+  b3()
 
   $('#slider').noUiSlider({
     start: [20, 80],
