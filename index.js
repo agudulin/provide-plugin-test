@@ -1,11 +1,12 @@
 var greenify = require('./greenify')
 var noui = require('./jquery.nouislider')
+var foo = require('provide-plugin-foo-test')
 
 greenify($)
 noui($)
 
 $(() => {
-  $('a').greenify()
+  foo()
 
   $('#slider').noUiSlider({
     start: [20, 80],
@@ -14,5 +15,5 @@ $(() => {
       'min': 0,
       'max': 100
     }
-  });
+  })
 })
